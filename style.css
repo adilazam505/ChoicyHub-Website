@@ -1,0 +1,277 @@
+/* GLOBAL */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: bisque;
+    text-align: center;
+}
+
+/* HEADER */
+.header-container {
+    display: flex; 
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    background: #f8be5a;
+    color: black;
+}
+
+.logo {
+    width: 120px;
+}
+
+/* NAVBAR */
+.navbar {
+    background: black;
+    padding: 15px;
+}
+
+.navbar a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background: black;
+    color: #f8bf5a;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* HERO */
+.hero {
+    padding: 5px 20px;
+}
+
+.hero video {
+    width: 400px;
+    max-width: 100%;
+    margin-top: 5px;
+}
+
+/* CATEGORY SECTION */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border: 3px solid #f8bf5a;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card button {
+    background: black;
+    color: #f8bf5a;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    opacity: 0.8;
+}
+
+/* PROMO */
+.promo {
+    background: bisque;
+    padding: 5px 20px;
+}
+
+.promo img {
+    width: 300px;
+    max-width: 90%;
+}
+
+/* ABOUT */
+.about {
+    background: black;
+    color: white;
+    padding: 50px 20px;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    padding: 15px;
+}
+
+/* CONTACT PAGE */
+.contact-section {
+    padding: 5px 20px;
+}
+
+.contact-box {
+    background: black;
+    color: white;
+    margin: 15px auto;
+    padding: 20px;
+    width: 300px;
+    border: 3px solid #f8bf5a;
+    border-radius: 10px;
+}
+
+/* FAQ ACCORDION STYLE */
+.faq-section {
+    padding: 5px 20px;
+}
+
+.faq-item {
+    width: 400px;
+    max-width: 90%;
+    margin: 10px auto;
+}
+
+.faq-question {
+    width: 100%;
+    background: black;
+    color: white;
+    border: none;
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    display: none;
+    background: white;
+    padding: 15px;
+    border: 2px solid black;
+}
+
+/* NAVBAR BASE */
+.navbar {
+    background: black;
+    padding: 15px;
+    position: relative;
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* HAMBURGER BUTTON */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        text-align: right;
+        padding-right: 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50px;
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        padding: 10px;
+        display: block;
+    }
+}
+
+/* SUBCATEGORY SECTION */
+.subcategories {
+    padding: 40px 20px;
+}
+
+.subcategory-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.subcategory-card {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.subcategory-card img {
+    width: 100%;
+}
+
+.subcategory-card button {
+    margin-top: 10px;
+    background: black;
+    color: #f8bf5a;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+/* CART ICON */
+.cart-icon {
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+}
+
+#cart-count {
+    background: red;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+/* CART PANEL */
+.cart-panel {
+    position: fixed;
+    right: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+    padding: 20px;
+    transition: 0.3s;
+    overflow-y: auto;
+}
+
+.cart-panel.active {
+    right: 0;
+}

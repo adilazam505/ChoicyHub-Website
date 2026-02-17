@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChoicyHub - Destination for Endless Choices</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header-container">
+        <img src="logo.png" alt="ChoicyHub Logo" class="logo">
+        <div class="header-text">
+            <h1>Welcome to ChoicyHub - Destination for Endless Choices</h1>
+            
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+<nav class="navbar">
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="kitchenware.html">Kitchenware</a>
+        <a href="cosmetics.html">Cosmetics</a>
+        <a href="bedding.html">Bedding</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- CART ICON -->
+<div class="cart-icon" onclick="openCart()">
+    🛒 <span id="cart-count">0</span>
+</div>
+
+
+</nav>
+
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h2>Quality Essentials of Kitchenware, Cosmetics, and Bedding — All in One Place.</h2>
+        <p><b>Let's explore what ChoicyHub has in store for you! </b></p>
+
+        <video controls>
+            <source src="intro.mp4" type="video/mp4">
+        </video>
+    </section>
+
+   <!-- CATEGORY SECTION -->
+<section class="categories">
+
+    <div class="card">
+        <img src="card1.png" alt="Kitchenware">
+        <h3>ChoicyHub - Kitchenware</h3>
+        <p>Smart tools for modern kitchens.</p>
+        <a href="kitchenware.html">
+            <button>Explore</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="card2.png" alt="Cosmetics">
+        <h3>ChoicyHub - Cosmetics</h3>
+        <p>Beauty products you can trust.</p>
+        <a href="cosmetics.html">
+            <button>Explore</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <img src="card3.png" alt="Bedding">
+        <h3>ChoicyHub - Bedding</h3>
+        <p>Comfort for better living.</p>
+        <a href="bedding.html">
+            <button>Explore</button>
+        </a>
+    </div>
+
+</section>
+
+<!-- CART PANEL -->
+<div id="cart-panel" class="cart-panel">
+
+    <h2>Your Cart</h2>
+
+    <div id="cart-items"></div>
+
+    <button onclick="clearCart()">Clear Cart</button>
+<button onclick="orderViaWhatsApp()">Order on WhatsApp</button>
+
+</div>
+   
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <h2>Why Choose ChoicyHub?</h2>
+        <p>
+            ChoicyHub brings carefully selected products for everyday living.
+            We focus on quality, reliability, and customer satisfaction.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 ChoicyHub. All rights reserved by ChoicyHub.</p>
+    </footer>
+
+</body>
+</html>
